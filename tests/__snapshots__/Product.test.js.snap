@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Snapshot 1`] = `
+<li
+  className="row"
+>
+  <span>
+    Patelnia, cena: 89,99zł
+  </span>
+  <Field
+    component={[Function]}
+    max={10}
+    min={1}
+    name="products[0].quantity"
+  />
+</li>
+`;

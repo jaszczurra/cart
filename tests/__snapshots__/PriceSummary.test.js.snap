@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PriceSummary Snapshot 1`] = `
+<div
+  className="price-summary"
+>
+  Suma: 25,50zł
+</div>
+`;

@@ -1,5 +1,5 @@
 import React from 'react'
-import bemCx from 'bem-modifiers'
+import classnames from 'classnames'
 import PropTypes from 'prop-types'
 
 const Counter = ({ min, max, value, isBlocked, handleChange }) => {
@@ -13,7 +13,7 @@ const Counter = ({ min, max, value, isBlocked, handleChange }) => {
   }
 
   return (
-    <div className={bemCx('counter', { 'disabled': isBlocked } )}>
+    <div className={classnames('counter', { 'counter--disabled': isBlocked } )}>
       <div className='counter__button' onClick={handleDecrease}>-</div>
       <div className='counter__text'>{`Obecnie masz ${value} sztuk produktu`}</div>
       <div className='counter__button' onClick={handleIncrease}>+</div>

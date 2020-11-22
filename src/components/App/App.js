@@ -1,18 +1,14 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
 
-const App = () => {
+import { CartSummaryData as CartSummary } from '../CartSummary/CartSummaryData'
 
-  return (
-    <div className="container">
-      <h3>Lista produktów</h3>
-      <ul>
-        <li className="row">Patelnia, cena: 89,99zł</li>
-      </ul>
-    </div>
-  );
-};
+import './App.css'
+
+const App = () =>
+  <div className='container'>
+    <CartSummary />
+  </div>
 
 export {
-    App
-};
+  App
+}

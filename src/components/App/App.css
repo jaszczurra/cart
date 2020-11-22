@@ -4,7 +4,43 @@
 }
 
 .row {
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
     border-bottom: 1px solid silver;
     list-style: none;
+}
+
+.products-list {
+    margin-bottom: 20px;
+}
+
+.counter {
+    width: 30%;
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    grid-auto-rows: 20px;
+}
+
+.counter__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+.counter--disabled .counter__button {
+    background-color: #ddd;
+    cursor: default;
+}
+
+.counter__text {
+    display: flex;
+    justify-content: center;
+}
+
+.price-summary {
+    display: flex;
+    justify-content: flex-end;
 }
